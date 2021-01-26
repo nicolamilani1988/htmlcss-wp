@@ -19,7 +19,7 @@
   width:100%;
 }
 
-header, section.full{
+header, section.banner{
   margin-bottom: 20px;
 }
 
@@ -53,16 +53,18 @@ li a{
   font-size: 1vw;
 }
 
-/* regole prima sezione */
-section.full{
+/* regole sezione banner */
+section.banner{
   position:relative;
+  background-image: url('../img/banner.jpg');
+  background-size: 100% 100%;
 
   /* debug */
-  /* height: 40vh; */
+  min-height: 50vh;
   /* background-color: #E1D67A; */
 }
 
-.layover, section.full img{
+.layover, section.banner{
   border-radius: 5px;
 }
 
@@ -71,15 +73,22 @@ section.full{
   top: 0;
   left: 0;
   right:0;
-  /* ho messo 3px a tentativi */
-  bottom: 3px;
+  bottom: 0;
   background-color: #00000050;
 }
 
-section.full img{
-  width: 100%;
-  height: 100%;
+.banner-text{
+  width: 50%;
+  color: red;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 5% 5%;
+  color:white;
+  font-size: 1vw;
 }
+
+
 
 /* regole seconda sezione */
 .row{
