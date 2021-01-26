@@ -17,10 +17,13 @@
 
 #container > *{
   width:100%;
-
 }
 
-header, section.banner, .row-header{
+li a, .float span{
+  color: #AEAEAE;
+}
+
+header, section.banner, .row-header, .row{
   margin-bottom: 20px;
 }
 
@@ -47,7 +50,6 @@ header img{
 }
 
 li a{
-  color: #C7C7C7;
   text-decoration: none;
   font-weight: bold;
   margin-right: 20px;
@@ -105,7 +107,6 @@ section.banner{
 
 /* regole terza sezione:float */
 .row{
-
   /* debug */
   /* background-color: #0086FF; */
 }
@@ -125,6 +126,10 @@ section.banner{
   /* border: 5px solid black; */
 }
 
+.pic{
+  position: relative;
+}
+
 .float h3{
   margin: 5px 0 5px;
 }
@@ -132,7 +137,7 @@ section.banner{
 .float img{
   width: 100%;
   height: 150px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .aside{
@@ -145,14 +150,16 @@ section.banner{
   margin-right: 10px;
 }
 
-/* .aside#left{
-  background-image: url('../img/img-1.jpg');
-  background-size: 100% 100%;
-} */
 
 /* regole footer */
 footer{
-  margin-top: 10px;
-  height: 5vh;
-  background-color: #8801FE;
+  text-align: center;
+  padding: 20px 0 10px;
+  /* debug */
+  /* height: 5vh;
+  background-color: #8801FE; */
+}
+
+.red-text{
+  color:red;
 }
