@@ -17,9 +17,10 @@
 
 #container > *{
   width:100%;
+
 }
 
-header, section.banner{
+header, section.banner, .row-header{
   margin-bottom: 20px;
 }
 
@@ -91,8 +92,22 @@ section.banner{
 
 
 /* regole seconda sezione */
+.row-header{
+  /* debug */
+  /* height: 10vh; */
+  /* background-color: #ABCFE7; */
+}
+
+.row-header h1{
+  font-size: 3vw;
+  line-height: 100%;
+}
+
+/* regole terza sezione:float */
 .row{
-  background-color: #0086FF;
+
+  /* debug */
+  /* background-color: #0086FF; */
 }
 
 .row:after{
@@ -101,18 +116,23 @@ section.banner{
   clear: both;
 }
 
-.row-head{
-  height: 10vh;
-  background-color: #ABCFE7;
-}
-
 .float{
   float: left;
-  height: 50vh;
-  margin: 20px 0;
-  background-color: #ABCFE7;
+  /* debug */
+  /* height: 50vh; */
+  /* background-color: #ABCFE7; */
   /* debug */
   /* border: 5px solid black; */
+}
+
+.float h3{
+  margin: 5px 0 5px;
+}
+
+.float img{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
 }
 
 .aside{
@@ -120,10 +140,15 @@ section.banner{
 }
 
 .central{
-  width: calc( 60% - 40px);
-  margin-left: 20px;
-  margin-right: 20px;
+  width: calc( 60% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+/* .aside#left{
+  background-image: url('../img/img-1.jpg');
+  background-size: 100% 100%;
+} */
 
 /* regole footer */
 footer{
