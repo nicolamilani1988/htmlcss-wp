@@ -1,3 +1,4 @@
+/* regole generali */
 *{
   margin:0;
   padding: 0;
@@ -5,7 +6,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* regole generali */
 #container{
   width: 70%;
   margin: auto;
@@ -19,12 +19,23 @@
   width:100%;
 }
 
+header, main > *{
+  margin-bottom: 20px;
+}
+
 li a, .float span{
   color: #AEAEAE;
 }
 
-header, section.banner, .row-header, .row{
-  margin-bottom: 20px;
+.banner:before, .pic:before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  background-color: #00000050;
+  border-radius: 5px;
 }
 
 /* regole header */
@@ -60,29 +71,20 @@ li a{
 section.banner{
   position:relative;
   background-image: url('../img/banner.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 
   /* debug */
-  min-height: 50vh;
+  min-height: 60vh;
   /* background-color: #E1D67A; */
 }
 
-.layover, section.banner{
+section.banner{
   border-radius: 5px;
-}
-
-.layover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right:0;
-  bottom: 0;
-  background-color: #00000050;
 }
 
 .banner-text{
   width: 50%;
-  color: red;
   position:absolute;
   bottom: 0;
   left: 0;
@@ -90,7 +92,6 @@ section.banner{
   color:white;
   font-size: 1vw;
 }
-
 
 
 /* regole seconda sezione */
@@ -102,8 +103,6 @@ section.banner{
 
 .row-header h1{
   font-size: 3vw;
-  margin-bottom: 10px;
-  line-height: 100%;
 }
 
 /* regole terza sezione:float */
@@ -131,14 +130,15 @@ section.banner{
   position: relative;
 }
 
-.float h3{
-  margin: 5px 0 5px;
-}
-
 .float img{
   width: 100%;
   height: 150px;
   border-radius: 5px;
+  object-fit: cover;
+}
+
+.float h3{
+  margin: 5px 0 5px;
 }
 
 .aside{
@@ -150,7 +150,6 @@ section.banner{
   margin-left: 10px;
   margin-right: 10px;
 }
-
 
 /* regole footer */
 footer{
