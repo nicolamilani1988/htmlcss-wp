@@ -3,6 +3,9 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -27,7 +30,7 @@ li a, .float span{
   color: #AEAEAE;
 }
 
-.banner:before, .pic:before{
+.jumbotron:before, .pic:before{
   content:'';
   position: absolute;
   top: 0;
@@ -67,23 +70,23 @@ li a{
   font-size: 1vw;
 }
 
-/* regole sezione banner */
-section.banner{
+/* regole sezione jumbotron */
+section.jumbotron{
   position:relative;
   background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
+  min-height: 60vh;
 
   /* debug */
-  min-height: 60vh;
   /* background-color: #E1D67A; */
 }
 
-section.banner{
+section.jumbotron{
   border-radius: 5px;
 }
 
-.banner-text{
+.jumbotron-text{
   width: 50%;
   position:absolute;
   bottom: 0;
